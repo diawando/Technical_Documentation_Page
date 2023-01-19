@@ -1,6 +1,32 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+html, body{
+    min-width: 300px;
+    line-height: 1.6;
 }
 
+#navbar{
+   position: fixed;
+   height: 100vh;
+   top: 0;
+   left: 0;
+   border-right-style: solid;
+   border-color:gray;
+   width: 350px;
+   max-width: 30vw;
+}
+header{
+    font-size: 30px;
+    margin: 10px;
+    text-align: center;
+}
+
+#main-doc{
+    position: absolute;
+    margin-left: 360px;
+    padding: 20px;
+    margin-bottom: 100px;
+
+}
+#main-doc header{
+    margin: 0;
+    text-align: left;
+}
