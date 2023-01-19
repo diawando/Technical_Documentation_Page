@@ -1,6 +1,7 @@
 html, body{
     min-width: 300px;
     line-height: 1.6;
+    box-sizing: border-box;
 }
 
 #navbar{
@@ -19,6 +20,27 @@ header{
     text-align: center;
 }
 
+#navbar ul{
+    height: 88%;
+    margin: 0;
+    padding: 0;
+}
+#navbar li{
+    width: 100%;
+    border-top: solid;
+    border-color:gray;
+    border-width: 1px;
+}
+
+#navbar li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 30px;
+    
+}
+
+
 #main-doc{
     position: absolute;
     margin-left: 360px;
@@ -29,4 +51,56 @@ header{
 #main-doc header{
     margin: 0;
     text-align: left;
+}
+
+#main-doc article{
+    padding: 0px 20px;
+    text-align: justify;
+    margin-top: 0;
+}
+
+#main-doc article ul{
+    margin-left: 10px;
+}
+
+code{
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+
+}
+
+@media only screen and (max-width: 700px){
+     #navbar ul{
+        border: 1px solid;
+        height: 207px;
+     }
+
+     #nabvar{
+        background-color: white;
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 300px;
+        border: none;
+        z-index: 1;
+        border-bottom: 2px solid;
+     }
+
+     #main-doc {
+         position: relative;
+         margin-left: 0px;
+         margin-top: 270px;
+     }
+
 }
